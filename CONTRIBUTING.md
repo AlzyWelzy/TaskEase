@@ -1,36 +1,49 @@
+# Contributing to Taskify
 
-# Contributing Guidelines
+Thank you for considering contributing to Taskify! We welcome your contributions to make this project better.
 
-Welcome to the project! We appreciate your interest and contributions.
+## How to Contribute
 
-## Ways to Contribute
+1. Fork the repository to your GitHub account.
+2. Clone the forked repository to your local machine:
 
-1. **Report Bugs**: If you find any bugs or issues, please report them using the [issue tracker](https://github.com/AlzyWelzy/YourRepo/issues).
+   ```bash
+   git clone https://github.com/AlzyWelzy/Taskify.git
+   ```
 
-2. **Feature Requests**: If you have an idea for a new feature or enhancement, feel free to open an issue to discuss it.
+3. Create a new branch for your changes:
 
-3. **Contribute Code**: If you want to contribute code, please follow these steps:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
 
-    a. Fork the repository.
+4. Make your changes and commit them:
 
-    b. Create a new branch for your feature or bug fix.
+   ```bash
+   git add .
+   git commit -m "Add a concise commit message describing your changes"
+   ```
 
-    c. Make your changes and commit them with a clear message.
+5. Push your changes to your forked repository:
 
-    d. Push your changes to your fork.
+   ```bash
+   git push origin feature/new-feature
+   ```
 
-    e. Submit a pull request.
+6. Create a pull request on the original repository.
 
-4. **Documentation**: Help improve the project's documentation. This includes adding new documentation, updating existing documentation, and fixing typos.
+## Code Style
 
-5. **Testing**: Test the project and report any issues. Additionally, if you are a fan of testing, you can help improve test coverage.
+Please follow the established coding style and conventions in the project. Ensure your code is well-documented and adheres to the existing patterns.
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvements, please create an issue on the [Issues](https://github.com/AlzyWelzy/Taskify/issues) page.
 
 ## Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
-## Licensing
+## License
 
-By contributing, you agree that your contributions will be licensed under the [GNU Affero General Public License v3.0](LICENSE). Please see the [LICENSE](LICENSE) file for more details.
-
-
+By contributing to TaskEase, you agree that your contributions will be licensed under the [AGPL-3.0](LICENSE).
