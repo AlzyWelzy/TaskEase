@@ -1,3 +1,4 @@
+
 # Code of Conduct
 
 ## Our Pledge
@@ -42,3 +43,4 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 For answers to common questions about this code of conduct, see [FAQ](https://www.contributor-covenant.org/faq).
 
 [welzyalzy@gmail.com]
+
