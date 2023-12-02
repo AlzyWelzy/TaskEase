@@ -46,4 +46,4 @@ Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ## License
 
-By contributing to TaskEase, you agree that your contributions will be licensed under the [AGPL-3.0](LICENSE).
+By contributing to Tasify, you agree that your contributions will be licensed under the [AGPL-3.0](LICENSE).
