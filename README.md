@@ -54,4 +54,4 @@ We welcome contributions! If you'd like to contribute to Taskify, please follow 
 
 ## License
 
-This project is licensed under the [GNU Affero General Public License (AGPL) version 3.0](LICENSE). Make sure to review the full text of the license for details.
+This project is licensed under the [AGPL-3.0](LICENSE). Make sure to review the full text of the license for details.
