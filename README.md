@@ -1,6 +1,6 @@
-# TaskEase
+# Taskify
 
-TaskEase is a lightweight and user-friendly to-do app designed for efficient task management.
+Taskify is a lightweight and user-friendly to-do app designed for efficient task management.
 
 ## Features
 
@@ -20,7 +20,7 @@ TaskEase is a lightweight and user-friendly to-do app designed for efficient tas
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/AlzyWelzy/TaskEase.git
+   git clone https://github.com/AlzyWelzy/Taskify.git
    ```
 
 2. To install all requirements run.
@@ -46,11 +46,11 @@ TaskEase is a lightweight and user-friendly to-do app designed for efficient tas
 - **Delete tasks:**
   - Remove tasks by clicking the delete option or icon.
 
-Feel free to explore and manage your tasks efficiently with these basic CRUD operations. If you encounter any issues or have suggestions for improvements, please check the [Issues](https://github.com/your-username/TaskEase/issues) section. Your feedback is valuable!
+Feel free to explore and manage your tasks efficiently with these basic CRUD operations. If you encounter any issues or have suggestions for improvements, please check the [Issues](https://github.com/your-username/Taskify/issues) section. Your feedback is valuable!
 
 ## Contributing
 
-We welcome contributions! If you'd like to contribute to TaskEase, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md). Your help is greatly appreciated.
+We welcome contributions! If you'd like to contribute to Taskify, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md). Your help is greatly appreciated.
 
 ## License
 
