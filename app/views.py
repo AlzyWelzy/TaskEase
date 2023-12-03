@@ -25,3 +25,8 @@ def index(request):
         "year": datetime.datetime.now().year,
     }
     return render(request, "index.html", context)
+
+
+def update(request, id):
+    app = App.objects.get(id=id)
+    return render(request, "update.html")
