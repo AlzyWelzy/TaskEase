@@ -8,7 +8,10 @@
 
         <form
           class="row g-3 justify-content-center align-items-center mb-4 pb-2"
+          method="post"
+          enctype="multipart/form-data"
         >
+          {% csrf_token %}
           <div class="col">
             <label for="form1" class="visually-hidden">Add a new todo</label>
             <input
@@ -16,12 +19,13 @@
               id="form1"
               class="form-control"
               placeholder="Add a new todo"
+              name="app_name"
             />
           </div>
 
           <div class="col-auto">
             <label for="progress" class="visually-hidden">Progress</label>
-            <select name="progress" id="progress" class="form-select">
+            <select name="app_progress" id="progress" class="form-select">
               <option value="In progress">In progress</option>
               <option value="Completed">Completed</option>
             </select>
@@ -42,17 +46,17 @@
             </tr>
           </thead>
           <tbody>
+            {% for app in apps %}
             <tr>
-              <th scope="row">1</th>
-              <td>Buy groceries for next week</td>
-              <td>In progress</td>
+              <th scope="row">{{forloop.counter}}</th>
+              <td>{{app.name}}</td>
+              <td>{{app.progress}}</td>
               <td>
+                <button type="submit" class="btn btn-success ms-1">Edit</button>
                 <button type="submit" class="btn btn-danger">Delete</button>
-                <button type="submit" class="btn btn-success ms-1">
-                  Finished
-                </button>
               </td>
             </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>
