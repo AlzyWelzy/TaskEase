@@ -20,13 +20,19 @@
               class="form-control"
               placeholder="Add a new todo"
               name="app_name"
+              value="{{app.name}}"
               required
             />
           </div>
 
           <div class="col-auto">
             <label for="progress" class="visually-hidden">Progress</label>
-            <select name="app_progress" id="progress" class="form-select">
+            <select
+              name="app_progress"
+              id="progress"
+              class="form-select"
+              value="{{app.progress}}"
+            >
               <option value="In progress">In progress</option>
               <option value="Completed">Completed</option>
             </select>
@@ -36,42 +42,6 @@
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
         </form>
-
-        <table class="table mb-4">
-          <thead>
-            <tr>
-              <th scope="col">No.</th>
-              <th scope="col">Todo item</th>
-              <th scope="col">Status</th>
-              <th scope="col">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% if apps %} {% for app in apps %}
-            <tr>
-              <th scope="row">{{forloop.counter}}</th>
-              <td>{{app.name}}</td>
-              <td>{{app.progress}}</td>
-              <td>
-                <button type="submit" class="btn btn-success ms-1">
-                  <a
-                    href="{% url 'update' app.id %}"
-                    style="text-decoration: none; color: white"
-                    >Update</a
-                  >
-                </button>
-                <button type="submit" class="btn btn-danger">
-                  <a
-                    href="{% url 'delete' app.id %}"
-                    style="text-decoration: none; color: white"
-                    >Delete</a
-                  >
-                </button>
-              </td>
-            </tr>
-            {% endfor %} {% endif %}
-          </tbody>
-        </table>
       </div>
     </div>
   </div>

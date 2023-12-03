@@ -29,4 +29,22 @@ def index(request):
 
 def update(request, id):
     app = App.objects.get(id=id)
-    return render(request, "update.html")
+    context = {
+        "title": "Taskify",
+        "year": datetime.datetime.now().year,
+        "app": app,
+    }
+
+    if request.method == "POST":
+        app.name = request.POST.get("app_name")
+        app.progress = request.POST.get("app_progress")
+        app.save()
+        return redirect("/")
+
+    return render(request, "update.html", context)
+
+
+def delete(request, id):
+    app = App.objects.get(id=id)
+    app.delete()
+    return redirect("/")
