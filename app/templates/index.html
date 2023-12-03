@@ -20,6 +20,7 @@
               class="form-control"
               placeholder="Add a new todo"
               name="app_name"
+              required
             />
           </div>
 
@@ -46,7 +47,7 @@
             </tr>
           </thead>
           <tbody>
-            {% for app in apps %}
+            {% if apps %} {% for app in apps %}
             <tr>
               <th scope="row">{{forloop.counter}}</th>
               <td>{{app.name}}</td>
@@ -56,7 +57,7 @@
                 <button type="submit" class="btn btn-danger">Delete</button>
               </td>
             </tr>
-            {% endfor %}
+            {% endfor %} {% endif %}
           </tbody>
         </table>
       </div>
